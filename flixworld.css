@@ -1,0 +1,121 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(hy1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    100%{
+       filter: hue-rotate(360de);
+
+    }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 300px;
+    height: 10vh;
+}
+
+.sign-in {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sign-in:hover {
+    background-color: darkred;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.themoviedb.org/t/p/original/5lF6bIYHR7jB4cxD9POnnJkFw3B.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: red;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cta:hover {
+    background-color: darkred;
+}
+
+/* Movie Section */
+.movie-section {
+    padding: 20px;
+}
+
+.movie-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.movie-row {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+.movie-card img {
+    width: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.movie-card {
+    cursor: pointer;
+   
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #141414;
+}
